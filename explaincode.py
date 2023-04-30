@@ -8,10 +8,18 @@ load_dotenv()
 # Set up OpenAI API credentials
 openai.api_type = "azure"
 
-openai.api_base = 'https://testgpt9212.openai.azure.com/'
+openai.api_base = 'https://xxxxxx.openai.azure.com/'
 openai.api_version = "2023-03-15-preview"
 
 #option1 create a stremline secretes 
+#Option # 1 - Using Streamlit secrets
+#This is the easiest way using Streamlit secrets : 
+#1.Create a folder within your director where you have the code name as “.streamlit “
+#2.Create a file name as “ secrets.toml” under the folder “.streamlit “
+#3. Assign the key in the “ secrets.toml”
+#Path = '363e5eaaaaaabbbbbccccc'
+#Flow will look like this : projectfolder\streamlit\.streamlit
+#When you call the key within your code use this :  openai.api_key = st.secrets['path']
 openai.api_key = st.secrets['path']
 
 #using option#2 env variable 
@@ -21,7 +29,7 @@ openai.api_key = st.secrets['path']
 
 
 # option#3 hard code the key 
-#openai.api_key = '363e5edda3ab454b9b00755c265b6d49'
+#openai.api_key = 'xxxxxxxxxxxxxxxxxxxx'
 
 # Define Streamlit app layout
 st.title("Code Explainer")
