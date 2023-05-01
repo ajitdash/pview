@@ -41,7 +41,7 @@ code_input = st.text_area("Enter code to explain")
 
 # Define function to explain code using OpenAI Codex
 def explain_code(input_code, language):
-    model_engine = "code-davinci-002" # Change to the desired OpenAI model
+    model_engine = "text-davinci-002" # Change to the desired OpenAI model
     prompt = f"Explain the following {language} code: \n\n{input_code}"
     response = openai.Completion.create(
         engine=model_engine,
