@@ -8,7 +8,7 @@ load_dotenv()
 # Set up OpenAI API credentials
 openai.api_type = "azure"
 
-openai.api_base = 'https://testgpt9212.openai.azure.com/'
+openai.api_base = 'https://testgptxxxx.openai.azure.com/'
 openai.api_version = "2023-03-15-preview"
 
 
