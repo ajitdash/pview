@@ -1,3 +1,0 @@
-Use Streamlit 
-Use Python 
-Use Source file 
