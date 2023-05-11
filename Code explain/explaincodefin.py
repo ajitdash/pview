@@ -16,8 +16,11 @@ openai.api_version = "2023-03-15-preview"
 #option1 create a stremline secretes 
 #Option # 1 - Using Streamlit secrets
 #This is the easiest way using Streamlit secrets : 
+
 #1.Create a folder within your director where you have the code name as “.streamlit “
+
 #2.Create a file name as “ secrets.toml” under the folder “.streamlit “
+
 #3. Assign the key in the “ secrets.toml”
 #Path = '363e5eaaaaaabbbbbccccc'
 #Flow will look like this : projectfolder\streamlit\.streamlit
