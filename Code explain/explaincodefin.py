@@ -11,21 +11,19 @@ openai.api_type = "azure"
 openai.api_base = 'https://testgpt9212.openai.azure.com/'
 openai.api_version = "2023-03-15-preview"
 
-#option1 create a stremline secretes 
 
-#option1 create a stremline secretes 
 #Option # 1 - Using Streamlit secrets
 #This is the easiest way using Streamlit secrets : 
-
+#How to create steps
 #1.Create a folder within your director where you have the code name as “.streamlit “
 
 #2.Create a file name as “ secrets.toml” under the folder “.streamlit “
 
 #3. Assign the key in the “ secrets.toml”
 #Path = '363e5eaaaaaabbbbbccccc'
-#Flow will look like this : projectfolder\streamlit\.streamlit
+#Flow will look like this : projectfolder\streamlit\.streamlit (NOTE MAKE SURE ".streamlit" THIS NEED TO BE IN THE PROJECT FOLDER) 
 #When you call the key within your code use this :  openai.api_key = st.secrets['path']
-
+#"more details you will find in the blog:  "
 openai.api_key = st.secrets['path']
 
 #using option#2 env variable 
