@@ -32,7 +32,7 @@ openai.api_key = st.secrets['path']
 
 
 # option#3 hard code the key 
-#openai.api_key = '363e5edda3ab454b9b00755c265b6d49'
+#openai.api_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<your key>'
 
 # Define Streamlit app layout
 st.title("Code Explainer")
