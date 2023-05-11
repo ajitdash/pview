@@ -28,16 +28,17 @@ openai.api_version = "2023-03-15-preview"
 
 openai.api_key = st.secrets['path']
 
+
+
+# option#2 : Environmental variable 
+
 #using option#2 env variable 
 #openai.api_key = os.getenv("OPENAI_API_KEY")
 
 #openai.api_key_path = 'key.env'
 
-
 # option#3 hard code the key 
 #openai.api_key = 'xxxxxxxxxxxxxxxxxxxx'
-
-# option#2 : Environmental variable 
 
 #CHECK THE BLOG HOW TO HIDE YOUR KEY 
 #"more details you will find in the blog:  "
