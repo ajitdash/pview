@@ -9,7 +9,7 @@ st.set_page_config(page_title="Code Converter", page_icon=":computer:")
 
 # Authenticate with OpenAI API
 openai.api_type = "azure"
-openai.api_base = 'https://testgpt9212.openai.azure.com/'
+openai.api_base = 'https://xxxxx.openai.azure.com/'
 openai.api_version = "2023-03-15-preview"
 #openai.api_key = 'xxxxxxxxxxxxxxxxxxxxx'
 openai.api_key = st.secrets['path']
