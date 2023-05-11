@@ -15,15 +15,16 @@ openai.api_version = "2023-03-15-preview"
 #Option # 1 - Using Streamlit secrets
 #This is the easiest way using Streamlit secrets : 
 #How to create steps
-#1.Create a folder within your director where you have the code name as “.streamlit “
 
-#2.Create a file name as “ secrets.toml” under the folder “.streamlit “
+#A.Create a folder within your director where you have the code name as “.streamlit “
 
-#3. Assign the key in the “ secrets.toml”
+#B.Create a file name as “ secrets.toml” under the folder “.streamlit “
+
+#C. Assign the key in the “ secrets.toml”
 #Path = '363e5eaaaaaabbbbbccccc'
 #Flow will look like this : projectfolder\streamlit\.streamlit (NOTE MAKE SURE ".streamlit" THIS NEED TO BE IN THE PROJECT FOLDER) 
 #When you call the key within your code use this :  openai.api_key = st.secrets['path']
-#"more details you will find in the blog:  "
+
 openai.api_key = st.secrets['path']
 
 #using option#2 env variable 
@@ -32,8 +33,13 @@ openai.api_key = st.secrets['path']
 #openai.api_key_path = 'key.env'
 
 
-# option#3 hard code the key 
+# option#2 hard code the key 
 #openai.api_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<your key>'
+
+# option#2 : Environmental variable 
+
+#CHECK THE BLOG HOW TO HIDE YOUR KEY 
+#"more details you will find in the blog:  "
 
 # Define Streamlit app layout
 st.title("Code Explainer")
