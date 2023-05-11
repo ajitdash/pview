@@ -1,8 +1,0 @@
-function fahrenheitToCelsius(fahrenheit) {
-  var celsius = (fahrenheit - 32) * 5 / 9;
-  return celsius;
-}
-
-var fahrenheit = 80;
-var celsius = fahrenheitToCelsius(fahrenheit);
-console.log(fahrenheit + " degrees Fahrenheit is equal to " + celsius + " degrees Celsius.");
