@@ -14,7 +14,7 @@ import openai
 
 # Authenticate with OpenAI API
 openai.api_type = "azure"
-openai.api_base = 'https://testgpt9212.openai.azure.com/'
+openai.api_base = 'https://xxxxxxx.openai.azure.com/'
 openai.api_version = "2023-03-15-preview"
 #openai.api_key = 'xxxxxxxxxxxxxxxxxxxxx'
 openai.api_key = st.secrets['path']
