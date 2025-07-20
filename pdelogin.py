@@ -80,7 +80,6 @@ else:
         else:
             file_path = file_selector(folder)
             if file_path:
-                # Display editable for common text files and preview for images
                 file_name = os.path.basename(file_path)
                 file_ext = file_name.lower().split('.')[-1]
                 if file_ext in ['txt', 'csv', 'json']:
@@ -95,8 +94,3 @@ else:
     st.sidebar.button("Logout", on_click=lambda: st.session_state.update({'logged_in': False}))
 
 
-
-# --- Unauthorized access redirect ---
-elif not st.session_state.logged_in:
-    st.session_state.page = 'login'
-    st.experimental_rerun()
