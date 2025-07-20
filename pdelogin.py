@@ -52,7 +52,7 @@ if not st.session_state.logged_in:
                 # Set "Upload" tab active after login
                 st.session_state.active_tab = 'Upload'
                 st.success("Login successful!")
-                st.experimental_rerun()   # Immediately rerun to go to app
+                st.rerun()   # Use st.rerun() instead of st.experimental_rerun()
             else:
                 st.error("Invalid username or password.")
 
@@ -64,16 +64,15 @@ if not st.session_state.logged_in:
     </div>
     """, unsafe_allow_html=True)
 
-# --- Main Application (Tabs) ---
+# --- Main Application (Tabs via radio for "default tab" trick) ---
 else:
     st.title("PDE Application")
 
-    # Maintain custom tab selection using radio (since st.tabs does not take a default as text as of current Streamlit)
     tab = st.radio(
         "Select Screen",
         ["📤 File Upload", "📄 Content View"],
         index=0 if st.session_state.active_tab == 'Upload' else 1,
-        label_visibility="collapsed"  # hides the label
+        label_visibility="collapsed"
     )
 
     if tab == "📤 File Upload":
